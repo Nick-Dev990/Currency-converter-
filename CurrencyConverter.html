@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="UTF-8">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="CurrencyConverter.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+
+        <button class="toggle-theme" onclick="toggleTheme()">🌗</button>
+        <div class="container">
+            <h1>Currency Converter</h1>
+            <div class="converter-box">
+            <input type="number" id="amount" placeholder="Enter amount">
+
+            <div class="row">
+            <select id="from">
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="XOF">FCFA</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <button onclick="swap()">🔂</button>
+            <select id="to">
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="XOF">FCFA</option>
+                <option value="RUB">RUB</option>
+            </select>
+            </div>
+
+            <button class="convert-btn" onclick="converter()">💱Convert</button>
+            <p id="result"></p>
+            <span id="result-text"></span>
+            <h3>History</h3>
+            <ul id="history"></ul>
+        </div>
+       </div>
+
+        <script src="Currencytab.js"></script>
+    </body>
+</html>
